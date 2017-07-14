@@ -9,5 +9,3 @@ pollutantmean <- function(directory, pollutant, id = 1:332){
     mean(dat[, pollutant], na.rm = TRUE)
 }
 
-
-
