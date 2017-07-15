@@ -6,9 +6,9 @@ corr<-function(directory,threshold=0){
         dattemp <- read.csv(files[i],header=TRUE)
         dattemp <- dattemp[complete.cases(dattemp),]
     
-        csum<-nrow(dattemp)
+        compcassum<-nrow(dattemp)
         
-        if(csum > threshold){
+        if(compcassum > threshold){
             dat <- c(dat,cor(dattemp$nitrate,dattemp$sulfate))
         }
         
